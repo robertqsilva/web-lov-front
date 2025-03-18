@@ -57,7 +57,7 @@ const createPageWebLove = async (req, res) => {
         const uploadedFiles = await uploadFiles(files);
         await savePhotoUrls(uploadedFiles, page_uuid);
 
-          const linkPagina = `127.0.0.1:5500/publi/index.html?rgb=${page_uuid}`;
+          const linkPagina = `https://weblove.onrender.com/public/index.html?rgb=${page_uuid}`;
 
           try {
             const linkqrcode = await QRCode.toDataURL(linkPagina, {

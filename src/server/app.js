@@ -8,7 +8,7 @@ const app = express();
 const corsOptions = {
   origin: "*", // Permitir todas as origens
   methods: ["GET", "POST", "OPTIONS", "PUT", "DELETE"], // Métodos permitidos
-  allowedHeaders: ["Content-Type", "X-Requested-With"], // Cabeçalhos permitidos
+  allowedHeaders: ["Content-Type", "Authorization"], // Cabeçalhos permitidos
 };
 
 

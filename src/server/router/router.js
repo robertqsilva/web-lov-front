@@ -13,5 +13,7 @@ const upload = multer({ storage });
 router.get("/page/:uuid", getPageInfo);
 
 router.post("/create-page", upload.array("files", 15), createPageWebLove);
-
+router.get('/' , (req, res) => {
+res.send("API WEB LOVE")
+})
 module.exports = router;

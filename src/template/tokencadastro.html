@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB LOVE</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #ffe6e6;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #d6336c;
+      }
+      p {
+        font-size: 16px;
+        color: #333;
+      }
+      .heart {
+        font-size: 50px;
+        color: #d6336c;
+      }
+      .qr-container {
+        margin: 20px 0;
+      }
+      .footer {
+        font-size: 12px;
+        color: #777;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <h1>Para Minha Pessoa Especial 💖</h1>
+      <p>
+        Meu amor! Eu preparei uma pequena surpresa para você. 
+        Escaneie o QR Code abaixo para descobrir! ✨
+      </p>
+      
+      <div class="heart">❤️</div>
+
+      <div class="qr-container">
+        <img
+          src="{{qrCode}}"
+          alt="QR Code Surpresa"
+        />
+      </div>
+
+      <div class="footer">
+        <p>Feito com amor 💕</p>
+      </div>
+    </div>
+  </body>
+</html>
